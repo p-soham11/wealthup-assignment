@@ -80,6 +80,7 @@
     top: -8px;
     color: #fff;
     font-size: 29px;
+    margin-left: 5px;
 }
 
 .line {
@@ -141,5 +142,5 @@
     font-size: 32px;
     color: #fff;
     position: relative;
-    bottom: 232px;
+    bottom: 252px;
 }
