@@ -1,95 +1,156 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+/** @format */
+
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    return (
+        <main className={styles.main}>
+            <div className={styles.mainDiv}>
+                <div className={styles.topDiv}>
+                    <div className={styles.heading}>
+                        Check your financial health
+                    </div>
+                    <div className={styles.subHeading}>
+                        Use WeathoMeter to get a free report card for your
+                        finances- within minutes!
+                    </div>
+                    <button className={styles.orangeBtn}>Get Started</button>
+                </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                <div className={styles.midDiv}>
+                    <div className={styles.checkDivLeft}>
+                        <div>
+                            <Image
+                                src={"/checkbox.png"}
+                                alt={""}
+                                width={41}
+                                height={41}
+                            />
+                            <span className={styles.checkText}>
+                                Expected Retirement Age
+                            </span>
+                        </div>
+                        <hr className={styles.line} />
+                        <div>
+                            <Image
+                                src={"/checkbox.png"}
+                                alt={""}
+                                width={41}
+                                height={41}
+                            />
+                            <span className={styles.checkText}>
+                                Identify Mistakes
+                            </span>
+                            <hr className={styles.line} />
+                        </div>
+                    </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+                    <Image
+                        src={"/phone.png"}
+                        alt={""}
+                        width={525}
+                        height={515}
+                    />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+                    <div className={styles.checkDivRight}>
+                        <div>
+                            <Image
+                                src={"/checkbox.png"}
+                                alt={""}
+                                width={41}
+                                height={41}
+                            />
+                            <span className={styles.checkText}>
+                                Personalised Road Map
+                            </span>
+                        </div>
+                        <hr className={styles.line} />
+                        <div>
+                            <Image
+                                src={"/checkbox.png"}
+                                alt={""}
+                                width={41}
+                                height={41}
+                            />
+                            <span className={styles.checkText}>
+                                Tips To Improve
+                            </span>
+                            <hr className={styles.line} />
+                        </div>
+                    </div>
+                </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+                <div className={styles.lowerDiv}>
+                    <div className={styles.vector}>
+                        <Image
+                            src={"/Vector1.png"}
+                            alt={""}
+                            width={1502}
+                            height={790}
+                        />
+                    </div>
+                    <div className={styles.onVector}>
+                        <div className={styles.heading2}>How it works ?</div>
+                        <Image
+                            className={styles.processImg}
+                            src={"/process.png"}
+                            alt={""}
+                            width={884}
+                            height={497}
+                        />
+                        <div className={styles.processText}>
+                            <div
+                                style={{
+                                    textAlign: "center",
+                                    color: "white",
+                                    marginRight: 166,
+                                    fontSize: 27,
+                                    fontWeight: "400",
+                                    letterSpacing: 1.89,
+                                    wordWrap: "break-word",
+                                }}
+                            >
+                                Answer few
+                                <br />
+                                questions
+                            </div>
+                            <div
+                                style={{
+                                    textAlign: "center",
+                                    color: "white",
+                                    fontSize: 27,
+                                    marginRight: 112,
+                                    fontWeight: "400",
+                                    letterSpacing: 1.89,
+                                    wordWrap: "break-word",
+                                }}
+                            >
+                                Register using
+                                <br />
+                                phone and OTP
+                            </div>
+                            <div
+                                style={{
+                                    textAlign: "center",
+                                    color: "white",
+                                    fontSize: 27,
+                                    fontWeight: "400",
+                                    letterSpacing: 1.89,
+                                    wordWrap: "break-word",
+                                }}
+                            >
+                                Get report and
+                                <br />
+                                personal roadmap
+                            </div>
+                        </div>
+                        <button className={styles.orangeBtn2}>
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    );
 }
